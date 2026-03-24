@@ -10,7 +10,7 @@ import axios from "axios";
 
 // axios.get("http://localhost:5000/api/v1/products").catch(() => {})
 
-  axios.get("/api/hello").catch(() => {})
+  fetch("/api/hello").catch(() => {})
 
 const store = configureStore({
   reducer: appSlice,
