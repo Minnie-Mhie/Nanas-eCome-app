@@ -12,6 +12,8 @@ import axios from "axios";
 
   fetch("/api/hello").catch(() => {})
 
+  //axios.post("/api/v1/request-otp", data)
+
 const store = configureStore({
   reducer: appSlice,
 })
