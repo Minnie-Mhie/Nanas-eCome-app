@@ -7,10 +7,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import "./App.css"
 import appSlice from "./redux/appSlice.js"
 import axios from "axios";
+import axiosInstance from "./api/Axios.js";
 
 // axios.get("http://localhost:5000/api/v1/products").catch(() => {})
 
-  fetch("/api/hello").catch(() => {})
+  axiosInstance.get("/v1/products").catch(() => {})
+
+  // fetch("/api/hello").catch(() => {})
 
   //axios.post("/api/v1/request-otp", data)
 
